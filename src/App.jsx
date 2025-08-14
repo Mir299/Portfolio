@@ -1,5 +1,5 @@
 
-import Header from "./widgets/header/Header";
+import Header from "./widgets/Header/Header";
 import NavBar from "./widgets/NavBar/NavBar";
 import AboutMe from "./widgets/Main/AboutMe/AboutMe";
 
