@@ -1,0 +1,74 @@
+.nav {
+  padding: 50px 0;
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+
+    p{
+    font-family: var(--font-family);
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--blackColor);
+    user-select: none;
+    transition: .4s;  
+    }
+
+    &-latterM {
+      transform: translateY(-13px);
+    }
+    
+    &-latterS {
+      transform: translateY(13px);
+    }
+
+    &:hover &-latterM,
+    &:hover &-latterS {
+      transform: translateY(0); 
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 80px;
+
+    &-link {
+      font-family: var(--font-family);
+      font-weight: 700;
+      font-size: 17px;
+      text-align: center;
+      color: var(--whiteColor); //!!!!!!!нужно поменять на белый цвет
+
+      &-contact {
+        // text
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 15px;
+        text-align: center;
+        color: var(--blackColor); //!!!!!!!нужно поменять цвет
+        // bg
+        padding: 15px 20px;
+        background: var(--whiteColor);  //!!!!!!!нужно поменять  цвет
+        border-radius: 30px;
+        transition: .4s;
+
+        &:hover {
+          background: var(--blackColor); //!!!!!!!нужно поменять  цвет
+          color: var(--whiteColor); //!!!!!!!нужно поменять  цвет
+         outline:2px solid var(--whiteColor); //!!!!!!!нужно поменять цвет
+        }
+        
+      }//nav__list-link-contact
+    }//nav__list-link
+  }//nav__list
+}//nav

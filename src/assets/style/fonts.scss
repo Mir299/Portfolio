@@ -1,0 +1,33 @@
+$font-name: "Roboto",
+"Montserrat",
+"Open Sans",
+"Raleway",
+"Advent Pro",
+"Varela",
+"Nunito";
+
+$font-path: "../fonts/";
+
+$font-weights: (
+    300: "Light",
+    400: "Regular",
+    500: "Medium",
+    600: "Semi-bold",
+    700: "Bold",
+    800: "Extra-bold"
+
+);
+
+$font-style: (
+  normal,
+  italic  
+);
+
+@each $weight,$weight-name in $font-weights{
+    @font-face {
+        font-family: $font-name;
+        src: url("#{$font-path}#{$font-name}-#{$weight-name}.ttf");
+        font-style: $font-style;
+        font-weight: $weight;
+    }
+}
